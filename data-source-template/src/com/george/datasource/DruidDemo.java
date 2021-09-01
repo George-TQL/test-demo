@@ -14,5 +14,6 @@ public class DruidDemo {
         DataSource ds = DruidDataSourceFactory.createDataSource(pro);
         Connection conn = ds.getConnection();
         System.out.println(conn);
+        System.out.println("dddd");
     }
 }
