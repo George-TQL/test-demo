@@ -13,6 +13,7 @@ public class DruidDemo {
         Properties pro = new Properties();
         pro.load(DruidDemo.class.getClassLoader().getResourceAsStream("druid.properties"));
         DataSource ds = DruidDataSourceFactory.createDataSource(pro);
+        System.out.println("tttttt");
         Connection conn = ds.getConnection();
         System.out.println(conn);
         System.out.println("dddd");
